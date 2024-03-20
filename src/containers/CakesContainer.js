@@ -1,7 +1,6 @@
 import { useState } from "react";
-
+import Cakes from "../components/cakes";
 const CakesContainer = () =>{
-    //const cake1 = ("Victoria Sponge", ["eggs", "butter", "sugar", "self-raising flour", "baking powder", "milk"], "5", "5");
 
     const [victoriaSponge, setVictoriaSponge] = useState({
 		cakeName: "Victoria Sponge",
@@ -29,10 +28,7 @@ const CakesContainer = () =>{
          ],
          price: 2,
          rating: 3
-   }
-   
-   )
-    //const cake3 = ("Carrot Cake", ["carrots", "walnuts", "oil", "cream cheese", "flour", "sugar"], "8", "5");
+   });
 
     const [carrotCake, setCarrotCake] = useState(
         {
@@ -51,11 +47,15 @@ const CakesContainer = () =>{
     )
     
     return (
-           <h3>Cakes</h3>
+        <>
+        <h3>Cakes</h3>
+        <Cakes title={"Victoria Sponge Cake"} cakeName={victoriaSponge.cakeName} ingredients={victoriaSponge.ingredients} price={victoriaSponge.price} rating={victoriaSponge.rating}/>
+        <Cakes title={"Tea Loaf Cake"} cakeName={teaLoaf.cakeName} ingredients={teaLoaf.ingredients} price={teaLoaf.price} rating={teaLoaf.rating}/>
+        <Cakes title={"Carrot Cake"} cakeName={carrotCake.cakeName} ingredients={carrotCake.ingredients} price={carrotCake.price} rating={carrotCake.rating}/>
 
-    )
-
-        
+        </>
+           
+    )    
     
 }
 
