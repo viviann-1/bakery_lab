@@ -22,7 +22,7 @@ const CakesContainer = () =>{
               "eggs",
              "oil",
              "dried fruit",
-                 "sugar",
+             "sugar",
              "self-raising flour",
              "strong tea",
          ],
@@ -36,7 +36,7 @@ const CakesContainer = () =>{
               ingredients: [
                    "carrots",
                      "walnuts",
-                 "oil",
+                      "oil",
                      "cream cheese",
                      "flour",
                  "sugar",
@@ -49,9 +49,9 @@ const CakesContainer = () =>{
     return (
         <>
         <h3>Cakes</h3>
-        <Cakes title={"Victoria Sponge Cake"} cakeName={victoriaSponge.cakeName} ingredients={victoriaSponge.ingredients} price={victoriaSponge.price} rating={victoriaSponge.rating}/>
-        <Cakes title={"Tea Loaf Cake"} cakeName={teaLoaf.cakeName} ingredients={teaLoaf.ingredients} price={teaLoaf.price} rating={teaLoaf.rating}/>
-        <Cakes title={"Carrot Cake"} cakeName={carrotCake.cakeName} ingredients={carrotCake.ingredients} price={carrotCake.price} rating={carrotCake.rating}/>
+        <Cakes title={"Delicious"} cakeName={victoriaSponge.cakeName} ingredients={victoriaSponge.ingredients} price={victoriaSponge.price} rating={victoriaSponge.rating}/>
+        <Cakes title={"Yummy"} cakeName={teaLoaf.cakeName} ingredients={teaLoaf.ingredients} price={teaLoaf.price} rating={teaLoaf.rating}/>
+        <Cakes title={"Tasty"} cakeName={carrotCake.cakeName} ingredients={carrotCake.ingredients} price={carrotCake.price} rating={carrotCake.rating}/>
 
         </>
            
